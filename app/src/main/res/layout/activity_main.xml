@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2020039033 김민석"
+            android:gravity="center"
+            android:background="#E0E0E0"
+            android:textSize="30sp"
+            android:padding="16dp"/>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/dog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dog"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cat"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/rabbit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rabbit"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/horse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/horse"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+</TabHost>
